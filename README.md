@@ -34,7 +34,7 @@ Flujo de trabajo:</li>
 <li class="has-line-data" data-line-start="25" data-line-end="26">Extracción de texto con filtrado por confianza</li>
 <li class="has-line-data" data-line-start="26" data-line-end="28">Presentación de resultados en interfaz amigable</li>
 </ol>
-<h1 class="code-line" data-line-start=28 data-line-end=29 ><a id="Detalles_Tcnicos_del_Proyecto_OCR_28"></a>Detalles Técnicos del Proyecto OCR</h1>
+<h1 class="code-line" data-line-start=28 data-line-end=29 ><a id="Detalles_Tcnicos_del_Proyecto_OCR_28"></a>Detalles Técnicos del Proyecto </h1>
 <h2 class="code-line" data-line-start=30 data-line-end=31 ><a id="Tcnicas_de_Preprocesamiento_30"></a>Técnicas de Preprocesamiento</h2>
 <h3 class="code-line" data-line-start=32 data-line-end=33 ><a id="1_Escalado_de_Imagen_32"></a>1. Escalado de Imagen</h3>
 <p class="has-line-data" data-line-start="33" data-line-end="35"><strong>Propósito</strong>: Aumentar la resolución para mejorar la calidad del texto.<br>
