@@ -1,1 +1,1 @@
-# -Detector-de-texto-en-im-genes
+# -Detector-de-texto-en-imagenes
