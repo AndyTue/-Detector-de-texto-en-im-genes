@@ -126,28 +126,7 @@ for i in range(len(data[‘text’])):<br>
 word = data[‘text’][i].strip()<br>
 if word and data[‘conf’][i] &gt; 30:<br>
 recognized_words.append(word)<br>
-📷 Ejemplo de Código Completo de Preprocesamiento<br>
-python<br>
-Copiar<br>
-Editar<br>
-def process_image(self, original_image):<br>
-altura, anchura = original_image.shape[:2]<br>
-factor_escala = 2.0<br>
-nueva_anchura = max(1, int(anchura * factor_escala))<br>
-nueva_altura = max(1, int(altura * factor_escala))<br>
-imagen_escalada = cv2.resize(original_image, (nueva_anchura, nueva_altura), interpolation=cv2.INTER_CUBIC)</p>
-<pre><code>gris = cv2.cvtColor(imagen_escalada, cv2.COLOR_BGR2GRAY)
-gris = cv2.fastNlMeansDenoising(gris, h=30)
-clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
-gris = clahe.apply(gris)
-umbral = cv2.adaptiveThreshold(gris, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
-                               cv2.THRESH_BINARY_INV, 31, 11)
-kernel_open = np.ones((2, 2), np.uint8)
-umbral = cv2.morphologyEx(umbral, cv2.MORPH_OPEN, kernel_open, iterations=1)
-kernel_close = np.ones((3, 3), np.uint8)
-processed_image = cv2.morphologyEx(umbral, cv2.MORPH_CLOSE, kernel_close, iterations=1)
-return processed_image
-</code></pre>
+
 <p class="has-line-data" data-line-start="141" data-line-end="142">OpenCV</p>
 <p class="has-line-data" data-line-start="143" data-line-end="144">NumPy</p>
 <p class="has-line-data" data-line-start="145" data-line-end="146">Pillow</p>
